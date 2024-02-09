@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container li a{
+    display:flex;
+}
+
+header {
+    background-color: black;
+    padding: 10px;
+}
+
+.logo, .sociais {
+    width: 25%;
+}
+
+.logo img {
+    width: 100px;
+    cursor: pointer;
+}
+
+.menu {
+    width: 50%;
+}
+
+.menu nav a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 30px;
+    font-size: 18px;
+    position: relative;
+}
+
+.menu a:hover::after {
+    width: 30px;
+}
+
+.sociais button {
+    width: 40px;
+    height: 40px;
+    background-image: linear-gradient(45deg, #FF2500, #FF7100);
+    border: none;
+    margin-right: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.sociais button i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu_produtos {
+    background-color: #ff5e00;
+    width: 100%;
+}
+
+.menu_produtos li {
+    display: inline-block;
+}
+
+.menu_produtos li a {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 50px; /* Increase the padding to increase spacing */
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+    padding: 12px;
+}
+
+/* Adicione ao seu arquivo de estilo */
+.carousel-container {
+    border: 2px solid #ccc;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#myCarousel {
+    width: 100%;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 300px; /* Ajuste a altura conforme necessário */
+    object-fit: cover;
+}
+
+.carousel-caption {
+    text-align: center;
+}
+
+/* Restante do seu estilo... */
+
+/* Destaques ou produtos que estão em desconto */
+
+.services {
+    background-color: #FFF;
+    color: #232224;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.mixestilos.com.br%2Ffundo-fotografico-textura-cinza---&psig=AOvVaw1fEKwaBAf8a089o7yr1Gli&ust=1701268366376000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCIDA7dj05oIDFQAAAAAdAAAAABAb");
+  }
+  
+  .services-content h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+  }
+  
+  .services-content p {
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+  }
+
+  .haircuts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+  }
+  
+  .haircut {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+  }
+  .haircut img {
+    width: 100%;
+    max-width: 354px;
+    transition: transform 0.2s;
+  }
+  
+  .haircut img:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .haircut-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+    background-color: #FFF;
+    z-index: 99;
+  }
+  
+  .haircut-info button {
+    color: #FFF;
+    background-color: #d94140;
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 0;
+    cursor: default;
+  }
+
+  /* Estilização da tabela de preços */
+.precos {
+    margin-top: 20px;
+}
+
+/* Estilização do botão */
+.btn-info {
+    background-color: #5bc0de;
+    color: #fff;
+    border: none;
+}
+
+/* Efeito de zoom na imagem */
+.img-zoom {
+    transition: transform 0.5s;
+}
+
+.img-zoom:hover {
+    transform: scale(1.2);
+}
+
+.servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 14px;
+    
+  }
+  
+  .servicos-content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 38px;
+    margin-bottom: 14px;
+  }
+  
+  .servicos-content p{
+    line-height: 150%;
+    margin-bottom: 14px;
+    text-align: center;
+    max-width: 780px;
+  }
+  
+  .produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding: 0 44px 34px 44px;
+  }
+  
+  .produto{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.45);
+    overflow: hidden;
+  }
+  
+  
+    .img{
+      width: 100%;
+      max-width: 354px; 
+      transition: transform 0.2s;
+    }
+    
+
+  
+  
+  
+  .produto img:hover{
+    transform: scale(1.2);
+    z-index: 1;
+  }
+  
+  .produto-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px;
+   
+    z-index: 99;
+  }
+  
+  .produto-info button{
+  
+    padding: 4px 8px;
+    border-radius: 4px;
+    border:0;
+    cursor: default;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .produtos{
+      flex-direction: column;
+    }
+  
+    .produto img{
+      max-width: 740px;
+    }
+  }
+
+/* Estilo para o Footer */
+footer {
+    margin-top: 50px;
+   
+}
+
+footer h4 {
+    color: #c29a9a;
+}
+
+footer p {
+    margin-bottom: 10px;
+    padding:15px;
+}
+
+/* esilo contato */
+
+form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+.button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
